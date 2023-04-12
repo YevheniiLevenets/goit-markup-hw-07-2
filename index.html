@@ -30,6 +30,11 @@
       <div class="header-container container">
         <nav class="nav">
           <a class="logo" href="./index.html">Web<span class="accent-head">Studio</span></a>
+          <button type="button" class="mobile-header-burger-button js-open-menu">
+            <svg class="mobile-header-svg" width="32px" height="22px">
+              <use href="./images/icons.svg#burger" class="mobile-header-icon"></use>
+            </svg>
+          </button>
           <ul class="nav-list list">
             <li class="nav-item">
               <a class="nav-link active" href="./index.html">Studio</a>
@@ -53,6 +58,68 @@
           </ul>
         </address>
       </div>
+
+      <div class="mobile-hero js-menu-container">
+        <button class="mobile-button-close js-close-menu">
+          <svg class="modal-hero-icon" width="8px" height="8px">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav-list list">
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link active" href="./index.html">Studio</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="#">Contacts</a>
+          </li>
+        </ul>
+        <address>
+          <ul class="mobile-address list">
+            <li class="mobile-address-list">
+              <a class="mobile-tel-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-address-list">
+              <a class="mobile-mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+
+        <div class="mobile-socials">
+          <ul class="mobile-menu-socials list">
+            <li class="mobile-socials-item">
+              <a href="" class="mobile-socials-link">
+                <svg class="mobile-socials-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a href="" class="mobile-socials-link">
+                <svg class="mobile-socials-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a href="#" class="mobile-socials-link">
+                <svg class="mobile-socials-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a href="#" class="mobile-socials-link">
+                <svg class="mobile-socials-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main>
@@ -63,6 +130,7 @@
           <button class="hero-button" type="button" data-modal-open>Order Service</button>
         </div>
       </section>
+
       <!-- Features section_2 -->
       <section class="section features">
         <div class="container">
@@ -119,15 +187,17 @@
           </ul>
         </div>
       </section>
+
       <!-- About Us section_3 -->
-      <section class="section">
+      <section class="section section-mobile-tablet-non">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="product-list list">
             <li class="product-item">
               <img
                 class="product-item-image"
-                src="./images/monitor-pc.jpg"
+                srcset="./images/desctop/monitor-pc.jpg 1x, ./images/desctop/monitor-pc@2x.jpg 2x"
+                src="./images/desctop/monitor-pc.jpg"
                 alt="desktop version site open on computer monitor"
                 width="360"
                 height="300"
@@ -136,7 +206,8 @@
             <li class="product-item">
               <img
                 class="product-item-image"
-                src="./images/smartphone.jpg"
+                srcset="./images/desctop/smartphone.jpg 1x, ./images/desctop/smartphone@2x.jpg 2x"
+                src="./images/desctop/smartphone.jpg"
                 alt="multi-page mobile version"
                 width="360"
                 height="300"
@@ -145,7 +216,11 @@
             <li class="product-item">
               <img
                 class="product-item-image"
-                src="./images/smartphone-in-hand.jpg"
+                srcset="
+                  ./images/desctop/smartphone-in-hand.jpg    1x,
+                  ./images/desctop/smartphone-in-hand@2x.jpg 2x
+                "
+                src="./images/desctop/smartphone-in-hand.jpg"
                 alt="smartphone in hand on laptop background"
                 width="360"
                 height="300"
@@ -154,6 +229,7 @@
           </ul>
         </div>
       </section>
+
       <!-- Our Team section_4 -->
       <section class="section team">
         <div class="container">
@@ -161,7 +237,11 @@
           <ul class="team-list list">
             <li class="team-item">
               <img
-                src="./images/mark-guerrero.jpg"
+                srcset="
+                  ./images/desctop/marc_guerrero_team.jpg    1x,
+                  ./images/desctop/marc_guerrero_team@2x.jpg 2x
+                "
+                src="./images/desctop/marc_guerrero_team.jpg"
                 alt="photo by mark guerrero"
                 width="264"
                 height="260"
@@ -200,7 +280,16 @@
               </ul>
             </li>
             <li class="team-item">
-              <img src="./images/tom-ford.jpg" alt="photo by tom ford" width="264" height="260" />
+              <img
+                srcset="
+                  ./images/desctop/tom_ford_team.jpg    1x,
+                  ./images/desctop/tom_ford_team@2x.jpg 2x
+                "
+                src="./images/desctop/tom_ford_team.jpg"
+                alt="photo by tom ford"
+                width="264"
+                height="260"
+              />
               <h3 class="section-subtitle team-title">Tom Ford</h3>
               <p class="team-desc">Frontend Developer</p>
               <ul class="team-socials list">
@@ -236,7 +325,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/camila-garcia.jpg"
+                srcset="
+                  ./images/desctop/camila_garcia_team.jpg    1x,
+                  ./images/desctop/camila_garcia_team@2x.jpg 2x
+                "
+                src="./images/desctop/camila_garcia_team.jpg"
                 alt="photo by camila garcia"
                 width="264"
                 height="260"
@@ -276,7 +369,11 @@
             </li>
             <li class="team-item">
               <img
-                src="./images/daniel-wilson.jpg"
+                srcset="
+                  ./images/desctop/daniel_wilson_team.jpg    1x,
+                  ./images/desctop/daniel_wilson_team@2x.jpg 2x
+                "
+                src="./images/desctop/daniel_wilson_team.jpg"
                 alt="photo by daniel wilson"
                 width="264"
                 height="260"
@@ -317,6 +414,7 @@
           </ul>
         </div>
       </section>
+
       <!-- Customers section_5 -->
       <section class="section">
         <div class="container">
@@ -368,6 +466,7 @@
         </div>
       </section>
     </main>
+
     <!-- Footer -->
     <footer class="footer">
       <div class="container footer-flex">
@@ -412,8 +511,8 @@
           </ul>
         </div>
         <div class="footer-right">
+          <p class="footer-subscribe-title">Subscribe</p>
           <form class="footer-modal">
-            <p class="footer-subscribe-title">Subscribe</p>
             <label class="footer-modal-field">
               <span class="footer-modal-input-wrapper">
                 <input
@@ -437,6 +536,7 @@
         </div>
       </div>
     </footer>
+
     <!-- Modal window -->
     <div class="backdrop-hero is-hidden" data-modal>
       <div class="modal-hero">
@@ -508,6 +608,7 @@
         </form>
       </div>
     </div>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
   </body>
 </html>

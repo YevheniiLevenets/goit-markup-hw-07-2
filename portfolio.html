@@ -30,6 +30,11 @@
       <div class="header-container container">
         <nav class="nav">
           <a class="logo" href="./index.html">Web<span class="accent-head">Studio</span></a>
+          <button type="button" class="mobile-header-burger-button js-open-menu">
+            <svg class="mobile-header-svg" width="32px" height="22px">
+              <use href="./images/icons.svg#burger" class="mobile-header-icon"></use>
+            </svg>
+          </button>
           <ul class="nav-list list">
             <li class="nav-item">
               <a class="nav-link" href="./index.html">Studio</a>
@@ -52,6 +57,67 @@
             </li>
           </ul>
         </address>
+      </div>
+
+      <div class="mobile-hero js-menu-container">
+        <button class="mobile-button-close js-close-menu">
+          <svg class="modal-hero-icon" width="8px" height="8px">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="mobile-nav-list list">
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="./index.html">Studio</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link active" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="mobile-nav-item">
+            <a class="mobile-nav-link" href="#">Contacts</a>
+          </li>
+        </ul>
+        <address>
+          <ul class="mobile-address list">
+            <li class="mobile-address-list">
+              <a class="mobile-tel-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+            <li class="mobile-address-list">
+              <a class="mobile-mail-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+        <div class="mobile-socials">
+          <ul class="mobile-menu-socials list">
+            <li class="mobile-socials-item">
+              <a href="" class="mobile-socials-link">
+                <svg class="mobile-socials-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a href="" class="mobile-socials-link">
+                <svg class="mobile-socials-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a href="#" class="mobile-socials-link">
+                <svg class="mobile-socials-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="mobile-socials-item">
+              <a href="#" class="mobile-socials-link">
+                <svg class="mobile-socials-icon" width="24px" height="24px">
+                  <use href="./images/icons.svg#linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
@@ -81,11 +147,15 @@
           <!-- Projects -->
           <ul class="filter-list list">
             <li class="filter-list-item">
-              <a class="filter-list-link" href="">
+              <a class="filter-list-link" href="#">
                 <div class="filter-list-box">
                   <img
                     class="filter-list-image"
-                    src="./images/1-banking-app.jpg"
+                    srcset="
+                      ./images/desctop/portfolio/banking_violet.jpg    1x,
+                      ./images/desctop/portfolio/banking_violet@2x.jpg 2x
+                    "
+                    src="./images/portfolio/banking_violet.jpg"
                     alt="Banking App Interface"
                     width="360"
                     height="300"
@@ -107,7 +177,11 @@
                 <div class="filter-list-box">
                   <img
                     class="filter-list-image"
-                    src="./images/2-cashless-pay.jpg"
+                    srcset="
+                      ./images/desctop/portfolio/cash_less.jpg    1x,
+                      ./images/desctop/portfolio/cash_less@2x.jpg 2x
+                    "
+                    src="./images/portfolio/cash_less.jpg"
                     alt="Cashless payment by phone"
                     width="360"
                     height="300"
@@ -129,7 +203,11 @@
                 <div class="filter-list-box">
                   <img
                     class="filter-list-image"
-                    src="./images/3-meditaion-app.jpg"
+                    srcset="
+                      ./images/desctop/portfolio/meditation_app.jpg    1x,
+                      ./images/desctop/portfolio/meditation_app@2x.jpg 2x
+                    "
+                    src="./images/portfolio/meditation_app.jpg"
                     alt="Meditation App"
                     width="360"
                     height="300"
@@ -151,7 +229,11 @@
                 <div class="filter-list-box">
                   <img
                     class="filter-list-image"
-                    src="./images/4-taxi-service.jpg"
+                    srcset="
+                      ./images/desctop/portfolio/taxi_service.jpg    1x,
+                      ./images/desctop/portfolio/taxi_service@2x.jpg 2x
+                    "
+                    src="./images/portfolio/taxi_service.jpg"
                     alt="Hand on the wheel"
                     width="360"
                     height="300"
@@ -173,7 +255,11 @@
                 <div class="filter-list-box">
                   <img
                     class="filter-list-image"
-                    src="./images/5-screen-illustration.jpg"
+                    srcset="
+                      ./images/desctop/portfolio/screen_ilustration.jpg    1x,
+                      ./images/desctop/portfolio/screen_ilustration@2x.jpg 2x
+                    "
+                    src="./images/portfolio/screen_ilustration.jpg"
                     alt="Mobile Screen Illustration"
                     width="360"
                     height="300"
@@ -195,7 +281,11 @@
                 <div class="filter-list-box">
                   <img
                     class="filter-list-image"
-                    src="./images/6-online-courses.jpg"
+                    srcset="
+                      ./images/desctop/portfolio/online_courses.jpg    1x,
+                      ./images/desctop/portfolio/online_courses@2x.jpg 2x
+                    "
+                    src="./images/portfolio/online_courses.jpg"
                     alt="The girl is smiling"
                     width="360"
                     height="300"
@@ -217,7 +307,11 @@
                 <div class="filter-list-box">
                   <img
                     class="filter-list-image"
-                    src="./images/7-instagram-stories.jpg"
+                    srcset="
+                      ./images/desctop/portfolio/instagram_stories_concept.jpg    1x,
+                      ./images/desctop/portfolio/instagram_stories_concept@2x.jpg 2x
+                    "
+                    src="./images/portfolio/instagram_stories_concept.jpg"
                     alt="Examples of Instagram stories"
                     width="360"
                     height="300"
@@ -239,7 +333,11 @@
                 <div class="filter-list-box">
                   <img
                     class="filter-list-image"
-                    src="./images/8-organic-food.jpg"
+                    srcset="
+                      ./images/desctop/portfolio/organic_food.jpg    1x,
+                      ./images/desctop/portfolio/organic_food@2x.jpg 2x
+                    "
+                    src="./images/portfolio/organic_food.jpg"
                     alt="Fruits and vegetables in pouch"
                     width="360"
                     height="300"
@@ -261,7 +359,11 @@
                 <div class="filter-list-box">
                   <img
                     class="filter-list-image"
-                    src="./images/9-fresh-coffee.jpg"
+                    srcset="
+                      ./images/desctop/portfolio/fresh_coffee.jpg    1x,
+                      ./images/desctop/portfolio/fresh_coffee@2x.jpg 2x
+                    "
+                    src="./images/portfolio/fresh_coffee.jpg"
                     alt="Cup of coffee"
                     width="360"
                     height="300"
@@ -327,8 +429,8 @@
           </ul>
         </div>
         <div class="footer-right">
+          <p class="footer-subscribe-title">Subscribe</p>
           <form class="footer-modal">
-            <p class="footer-subscribe-title">Subscribe</p>
             <label class="footer-modal-field">
               <span class="footer-modal-input-wrapper">
                 <input
@@ -352,5 +454,7 @@
         </div>
       </div>
     </footer>
+
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
