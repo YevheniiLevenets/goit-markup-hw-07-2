@@ -1248,13 +1248,13 @@ p {
   margin-right: 8px;
 }
 
-.modal-form-check:checked + .modal-form-check-desc::before {
+.modal-form-check + .modal-form-check-desc::before {
   background-color: var(--text-white);
   border: 1.25px solid var(--primary-text-color);
   border-radius: 2px;
 }
 
-.modal-form-check + .modal-form-check-desc::before {
+.modal-form-check:checked + .modal-form-check-desc::before {
   background-color: var(--btn-accent);
   border: 1.25px solid var(--btn-accent);
   border-radius: 2px;
