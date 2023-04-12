@@ -1357,7 +1357,7 @@ p {
 .filter-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: left;
   gap: 48px 24px;
 }
 
