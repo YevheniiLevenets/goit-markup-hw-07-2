@@ -1303,17 +1303,28 @@ p {
 /* PORTFOLIO */
 
 /* filter button */ /* section 1 */
+
 .portfolio {
   padding-top: 96px;
 }
+
 .filter {
   margin-bottom: 72px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  row-gap: 16px;
+  column-gap: 24px;
 }
-.filter .item + .item {
-  margin-left: 24px;
+
+@media screen and (min-width: 768px) {
+  .filter {
+    margin-bottom: 72px;
+    display: flex;
+    justify-content: center;
+  }
 }
+
 .filter-btn {
   text-align: center;
   display: inline-block;
@@ -1327,11 +1338,11 @@ p {
   color: var(--btn-accent);
   background-color: var(--background-primary);
   border: 1px solid #e7e9fc;
-
   transition-property: box-shadow, color, background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .filter-btn:hover,
 .filter-btn:focus,
 .filter-btn:active {
